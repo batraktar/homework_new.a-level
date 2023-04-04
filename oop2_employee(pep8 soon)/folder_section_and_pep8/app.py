@@ -4,11 +4,11 @@ from developer import Developer
 
 
 if __name__ == "__main__":
-    e1 = Employee('Will', 100)
-    e2 = Employee('Den', 250)
-    d = Developer('Rattan', 220, ['Python', 'SQL', 'HTML/CSS'])
-    d2 = Developer('Max', 330, ['Python', 'C++', 'JS'])
-    r = Recruiter('Nik', 123)
+    e1 = Employee('Will', 100, 'will@gmail.com')
+    e2 = Employee('Den', 250, 'den@gmail.com')
+    d = Developer('Rattan', 220, 'rattan@gmail.com', ['Python', 'SQL', 'HTML/CSS'])
+    d2 = Developer('Max', 330, 'max@gmail.com', ['Python', 'C++', 'JS'])
+    r = Recruiter('Nik', 123, 'nik@gmail.com')
     new_dev = d.__add__(d2)
     print(d, r,
           e1.check_salary(12),
